@@ -1,0 +1,51 @@
+package project.java;
+
+import project.java.Product;
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    CarModels passat = new CarModels();
+    passat.model = "s450";
+    passat.prize = 50000;
+    passat.detail = "sturdy and strong";
+
+    CarModels tofas = new CarModels();
+    tofas.model = "s550";
+    tofas.prize = 55000;
+    tofas.detail = "sturdy and awesome";
+
+    CarModels fiategea = new CarModels();
+    fiategea.model = "s650";
+    fiategea.prize = 60000;
+    fiategea.detail = "very bad";
+
+    CarModels[] carmodel = {passat, tofas, fiategea};
+
+    for (CarModels carmodels : carmodel) {
+      System.out.println(
+          "Car Models :"
+              + carmodels.model
+              + "\t "
+              + "Prize :"
+              + carmodels.prize
+              + "\t"
+              + "   Detail :"
+              + carmodels.detail);
+    }
+
+    System.out.println("----------");
+    for (CarModels carmodels : carmodel) {
+      System.out.println("Car Models :" + carmodels.model);
+    }
+    System.out.println("----------");
+    for (CarModels carmodels : carmodel) {
+      System.out.println("Car Prizes :" + carmodels.prize);
+    }
+    System.out.println("----------");
+    for (CarModels carmodels : carmodel) {
+      System.out.println("Car Details :" + carmodels.detail);
+    }
+  }
+}
