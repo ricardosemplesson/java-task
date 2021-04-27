@@ -1,0 +1,9 @@
+package project.java;
+
+public class CarModels {
+      String model;
+      int prize;
+      String detail;
+      
+
+}
